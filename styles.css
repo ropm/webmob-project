@@ -1,0 +1,115 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .c-head {
+    font-size: 2em;
+  }
+  .carousel-caption p {
+    font-size: 1em;
+  }
+
+}
+
+.carousel-caption {
+  text-shadow: 1px 1px 1px #000;
+  position: absolute;
+  top: 30%;
+  z-index: 20;
+}
+
+.btn-light {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+body {
+  padding-top: 5px;
+}
+
+/* navbar */
+#logo-img {
+  width: 60px;
+  height: 40px;
+}
+
+#cohj {
+  background-color: #FF8300;
+  color: #000;
+}
+#ohj {
+  background-color: rgba(255, 131, 0, 0.3);
+}
+
+.players {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.rounded-circle {
+  margin-bottom: 20px;
+}
+.phead {
+    padding-top: 80px;
+}
+.plr {
+
+}
+.col-lg-4 {
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 20px;
+}
+
+
+/*
+.treenit {
+  background-color: #fff;
+  display: block;
+  border-radius: 5px;
+}
+.ott {
+  background-color: #fff;
+  display: block;
+  border-radius: 5px;
+}
+*/
+#tietoabody {
+  background: url("src/urhoback2.png") no-repeat right fixed;
+  background-size: contain;
+}
+#yhteysbody {
+    background: url("src/urhoback2.png") no-repeat right fixed;
+    background-size: contain;
+}
+#yhteys {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+.mapouter {
+  text-align: right;
+  height: 300px;
+  width: 400px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 300px;
+  width: 400px;
+}
+#yhteysfoot {
+  bottom: 0;
+  margin-top: -50px;
+}
+.tiedot {
+  background-color: #fff;
+  display: block;
+  border-radius: 5px;
+}
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #e9ecef;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
