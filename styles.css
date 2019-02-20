@@ -1,9 +1,18 @@
+/* Common css, whole document */
 * {
   font-family: 'Montserrat', sans-serif;
 }
-@media only screen and (max-width: 992px) {
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding-top: 5px;
+}
+
+/* Media queries for mobile devices */
+@media only screen and (min-width: 500px) {
   .c-head {
-    font-size: 2em;
+    font-size: 3em;
   }
   .s-head {
     font-size: 3em;
@@ -12,10 +21,9 @@
     font-size: 1em;
   }
 }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .c-head {
-    font-size: 2em;
+    font-size: 4em;
   }
   .s-head {
     font-size: 3em;
@@ -24,56 +32,66 @@
     font-size: 1em;
   }
 }
-
-@media only screen and (max-width: 600px) {
-  .c-head {
-    font-size: 1.5em;
-  }
-  .s-head {
-    font-size: 2em;
-  }
-  .carousel-caption p {
-    font-size: 1em;
-  }
+/* Background color for containers */
+.cont-bg {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: block;
+  border-radius: 5px;
 }
 
+/* Navbar */
+#logo-img {
+  width: 60px;
+  height: 40px;
+}
 
+/* Carousel index.html */
 .carousel-caption {
   text-shadow: 1px 1px 1px #000;
   position: absolute;
   top: 30%;
   z-index: 20;
 }
+/* Jumbotron index.html */
+.indexjumbo {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-left: 0;
+}
 
-.btn-light {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-body {
-  padding-top: 5px;
-}
+/* Site headers tietoa, yhteys, joukkue.htmls */
 .s-head {
   font-size: 5em;
 }
-
 .sivutheader {
   text-align: center;
   padding-top: 80px;
 }
 
-/* navbar */
-#logo-img {
-  width: 60px;
-  height: 40px;
-}
-
+/* Otteluohjelma table */
 #cohj {
-  background-color: #FF8300;
+  background-color:rgba(204, 204, 204, 0.8);
   color: #000;
 }
 #ohj {
-  background-color: rgba(255, 131, 0, 0.3);
+  background-color: rgba(226, 226, 226, 0.9);
 }
 
+/* topimage joukkue.html */
+.joukkuekuva {
+  width: 99%;
+  margin: 0 auto;
+}
+.joukkuekuva img {
+  width: 100%;
+}
+
+/* Players listed */
+.phead {
+  padding-top: 80px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 3em;
+}
 .players {
   margin: 0 auto;
   width: 90%;
@@ -82,54 +100,30 @@ body {
 .rounded-circle {
   margin-bottom: 20px;
 }
-.phead {
-    padding-top: 80px;
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 3em;
-}
-.joukkuekuva {
-  width: 99%;
-  margin: 0 auto;
-}
-.joukkuekuva img {
-  width: 100%;
-
-}
+/* Border for players */
 .col-lg-4 {
   border-bottom: 1px solid #CCC;
   margin-bottom: 20px;
 }
 
-
-/*
-.treenit {
-  background-color: #fff;
-  display: block;
-  border-radius: 5px;
-}
-.ott {
-  background-color: #fff;
-  display: block;
-  border-radius: 5px;
-}
-*/
-.indexjumbo {
-  background-color: #fff;
-  padding-left: 0;
-}
+/* Background for tietoa.html */
 #tietoabody {
   background: url("src/urhoback2.png") no-repeat right fixed;
   background-size: contain;
 }
+
+
+/* Background for yhteys.html */
 #yhteysbody {
     background: url("src/urhoback2.png") no-repeat right fixed;
     background-size: contain;
 }
+/* Making sure yhteys.html footer stays at bottom */
 #yhteys {
   min-height: 75rem;
   padding-top: 4.5rem;
 }
+/* Google Map */
 .mapouter {
   text-align: right;
   height: 300px;
@@ -141,19 +135,12 @@ body {
   height: 300px;
   width: 400px;
 }
-#yhteysfoot {
-  bottom: 0;
-  margin-top: -50px;
-}
-.tiedot {
-  background-color: #fff;
-  display: block;
-  border-radius: 5px;
-}
+
+/* Footer */
 footer {
   padding-top: 2rem;
   padding-bottom: 1rem;
-  background-color: #e9ecef;
+  background-color: rgba(226, 226, 226, 1);
 }
 
 footer p {
