@@ -1,16 +1,42 @@
 * {
   font-family: 'Montserrat', sans-serif;
 }
+@media only screen and (max-width: 992px) {
+  .c-head {
+    font-size: 2em;
+  }
+  .s-head {
+    font-size: 3em;
+  }
+  .carousel-caption p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .c-head {
+    font-size: 2em;
+  }
+  .s-head {
+    font-size: 3em;
+  }
+  .carousel-caption p {
+    font-size: 1em;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .c-head {
+    font-size: 1.5em;
+  }
+  .s-head {
     font-size: 2em;
   }
   .carousel-caption p {
     font-size: 1em;
   }
-
 }
+
 
 .carousel-caption {
   text-shadow: 1px 1px 1px #000;
@@ -24,6 +50,14 @@
 }
 body {
   padding-top: 5px;
+}
+.s-head {
+  font-size: 5em;
+}
+
+.sivutheader {
+  text-align: center;
+  padding-top: 80px;
 }
 
 /* navbar */
@@ -41,8 +75,8 @@ body {
 }
 
 .players {
-  margin: auto;
-  width: 50%;
+  margin: 0 auto;
+  width: 90%;
   padding: 10px;
 }
 .rounded-circle {
@@ -50,8 +84,16 @@ body {
 }
 .phead {
     padding-top: 80px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 3em;
 }
-.plr {
+.joukkuekuva {
+  width: 99%;
+  margin: 0 auto;
+}
+.joukkuekuva img {
+  width: 100%;
 
 }
 .col-lg-4 {
@@ -72,6 +114,10 @@ body {
   border-radius: 5px;
 }
 */
+.indexjumbo {
+  background-color: #fff;
+  padding-left: 0;
+}
 #tietoabody {
   background: url("src/urhoback2.png") no-repeat right fixed;
   background-size: contain;
@@ -106,7 +152,7 @@ body {
 }
 footer {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   background-color: #e9ecef;
 }
 
